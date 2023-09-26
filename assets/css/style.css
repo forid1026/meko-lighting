@@ -1,0 +1,310 @@
+:root {
+    --primary-color: #3F7639;
+    ;
+}
+
+/* ==================== Start Utility CSS ===================*/
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+body {
+    color: #787a88;
+    margin: 0;
+    padding: 0;
+}
+
+.text-color {
+    color: #333333;
+}
+
+button.btn.btn-dark {
+    border-radius: 0;
+    border-width: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .5s ease-in-out;
+}
+
+button.btn.btn-dark:hover {
+    background: transparent;
+    color: #333333;
+    background-color: transparent;
+    border-color: #333333;
+}
+
+.btn-outline-dark {
+    border-width: 3px;
+}
+
+/* ==================== Start Top Header CSS ===================*/
+.top-header {
+    background: #333333;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.top-header .social-link li,
+.top-header .contact-information li {
+    margin-right: 15px;
+}
+
+.top-header .social-link li:last-child,
+.top-header .contact-information li:last-child {
+    margin-right: 0px;
+}
+
+.top-header .social-link li a,
+.top-header .contact-information li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-header .top-info h3 {
+    font-size: 18px;
+    color: #fff;
+}
+
+/* ==================== End Top Header CSS ===================*/
+
+/* ==================== Start Main Header CSS ===================*/
+.main-header {
+    height: 80px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-wrapper .logo img {
+    width: 200px;
+}
+
+.header-wrapper .nav-item a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #787a88;
+    text-decoration: none;
+    border-color: transparent;
+    border-width: 0 0 3px;
+    border-style: solid;
+    padding: 8px 15px;
+    transition: .3s;
+    line-height: 1.25;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* .menu-wrapper .nav-item a.nav-link{
+    position: relative;
+    display: block;
+    transition: .3s;
+    line-height: 1.25;
+} */
+
+.header-wrapper .nav-item a:hover {
+    color: #333333;
+    border-color: #3F7639;
+}
+
+/* Start Category Section */
+.single-category-wrap {
+    overflow: hidden;
+}
+
+.single-category-wrap .category-image {
+    display: block;
+    overflow: hidden;
+}
+
+.single-category-wrap .category-image img {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.single-category-wrap .category-image:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.single-category-wrap .category-title a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #333333;
+    font-size: 24px;
+}
+
+.single-category-wrap .category-title a:hover {
+    color: var(--primary-color);
+}
+
+
+/* End Category Section */
+
+/* Start product Section */
+.product-single-wrapper .product-content .product-name {
+    font-size: 16px;
+}
+
+/* End product Section */
+
+/* Start catalog Section */
+.catalog-section {
+    background-image: url('../images/catalog/catalog-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog-section .catalog-content-wrapper {
+    padding: 140px 0;
+}
+
+.catalog-section .catalog-content-wrapper h3 {
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: #333333;
+    font-size: 40px;
+    line-height: 0.9;
+    letter-spacing: 0px;
+}
+
+.catalog-section .catalog-content-wrapper h2 {
+    font-weight: 900;
+    font-style: normal;
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-color);
+    font-size: 80px;
+    line-height: 1.7;
+    letter-spacing: 0px;
+}
+
+.catalog-content-wrapper .btn {
+    text-align: center;
+    z-index: 1;
+    line-height: 1;
+    border-width: 3px;
+    border-style: solid;
+    transition: .3s;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 12px 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+
+}
+
+/* End catalog Section */
+
+/* start newsletter Section */
+.newsletter-section {
+    background-color: var(--primary-color);
+}
+
+.newsletter-content-wrapper {
+    color: #fff;
+    padding: 100px 0;
+}
+
+.newsletter-content-wrapper input.form-control.email-field,
+input.submit-field {
+    border-radius: 0;
+    height: 50px;
+}
+
+.newsletter-content-wrapper .input-form .btn-dark {
+    padding: 10px 30px;
+}
+
+.newsletter-content-wrapper .input-form .btn-dark:hover {
+    background-color: #212529;
+    color: #fff;
+}
+
+/* end newsletter Section */
+
+/* Start footer Section */
+
+footer.footer-section {
+    background-color: #FAFAFA;
+}
+
+.footer-menu-wrap,
+.social-menu-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-menu-wrap li,
+.social-menu-wrap li {
+    text-align: center;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.footer-menu li a,
+.social-menu-wrap li a {
+    color: #333333;
+    font-weight: 600;
+}
+
+.footer-menu li a:hover,
+.social-menu-wrap li a:hover {
+    color: var(--primary-color);
+}
+
+.container-fluid.copy-section {
+    background-color: #333333;
+}
+
+.copywrite-section {
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+div#back-top {
+    padding: 8px 15px;
+    display: block;
+    border-radius: 5px 5px 0 0;
+    background: var(--primary-color);
+    position: fixed;
+    right: 5px;
+    bottom: 2vh;
+    margin: 0;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+div#back-top i {
+    font-size: 18px;
+    color: #fff;
+}
+
+div#back-top:hover {
+    background-color: #333333;
+}
